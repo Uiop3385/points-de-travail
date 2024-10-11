@@ -1,4 +1,4 @@
-window.TrelloPowerUp.initialize({
+TrelloPowerUp.initialize({
   'card-buttons': function (t, opts) {
     return [{
       icon: 'https://example.com/icon.png', // Replace with an icon if desired
