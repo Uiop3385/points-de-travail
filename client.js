@@ -6,7 +6,7 @@ TrelloPowerUp.initialize({
       callback: function(t) {
         return t.popup({
           title: 'Définir les points',
-          url: './points.html',  // This will open the form to set points
+          url: 'https://uiop3385.github.io/points-de-travail/points.html',  // This will open the form to set points
           height: 200
         });
       }
