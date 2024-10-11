@@ -1,3 +1,4 @@
+/*
 TrelloPowerUp.initialize({
   'card-buttons': function (t, opts) {
     return [{
@@ -9,6 +10,18 @@ TrelloPowerUp.initialize({
           url: 'https://uiop3385.github.io/points-de-travail/points.html',  // This will open the form to set points
           height: 200
         });
+      }
+    }];
+  }
+});
+*/
+window.TrelloPowerUp.initialize({
+  'card-buttons': function (t, opts) {
+    return [{
+      text: 'Test Button',
+      callback: function(t) {
+        alert('Button Clicked');
+        return t.closePopup();
       }
     }];
   }
