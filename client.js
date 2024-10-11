@@ -15,7 +15,7 @@ TrelloPowerUp.initialize({
   }
 });
 */
-window.TrelloPowerUp.initialize({
+TrelloPowerUp.initialize({
   'card-buttons': function (t, opts) {
     return [{
       text: 'Test Button',
