@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+</head>
+<body>
+  <h3>Ajouter des points à la tâche</h3>
+  <form id="points-form">
+    <label for="points-input">Points:</label>
+    <input type="number" id="points-input" name="points" min="1" required />
+    <button type="submit">Définir les points</button>
+  </form>
+
+  <script>
+    var t = TrelloPowerUp.iframe();
+    
+    document.getElementById('points-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var points = document.getElementById('points-input').value;
+      
+      // Append points to the card's title
+      t.card('name').then(function(card) {
+        var updatedName = `${card.name} [${points} points]`;
+        return t.set('card', 'name', updatedName).then(function() {
+          t.closePopup();
+        });
+      });
+    });
+  </script>
+</body>
+</html>
