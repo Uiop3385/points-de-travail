@@ -1,7 +1,7 @@
 TrelloPowerUp.initialize({
   'card-buttons': function (t, opts) {
     return [{
-      icon: 'https://example.com/icon.png', // Replace with an icon if desired
+      icon: 'https://cdn.glitch.com/1b42d7fe-bda8-4af8-a6c8-eff0cea9e08a%2Frocket-ship.png?1494946700421', // Replace with an icon if desired
       text: 'Définir les points',
       callback: function(t) {
         return t.popup({
